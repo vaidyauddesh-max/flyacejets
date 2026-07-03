@@ -1,0 +1,200 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 560" role="img" aria-labelledby="title desc">
+  <title id="title">Fly ACEJETS Book Now Turbine CTA</title>
+  <desc id="desc">A metallic aviation ribbon with a centered animated jet engine turbine button reading Book Now.</desc>
+
+  <style>
+    #turbine-blades {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: turbine-spin 8s linear infinite;
+    }
+
+    @keyframes turbine-spin {
+      to { transform: rotate(360deg); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      #turbine-blades { animation: none; }
+    }
+  </style>
+
+  <defs>
+    <radialGradient id="ambient-glow" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.11"/>
+      <stop offset="35%" stop-color="#6f767d" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="chrome-dark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#050607"/>
+      <stop offset="20%" stop-color="#4a5158"/>
+      <stop offset="36%" stop-color="#111417"/>
+      <stop offset="52%" stop-color="#c3c9cf"/>
+      <stop offset="68%" stop-color="#1b1f23"/>
+      <stop offset="100%" stop-color="#050607"/>
+    </linearGradient>
+
+    <linearGradient id="chrome-soft" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#07090b"/>
+      <stop offset="18%" stop-color="#899099"/>
+      <stop offset="34%" stop-color="#20252a"/>
+      <stop offset="55%" stop-color="#e0e4e7"/>
+      <stop offset="72%" stop-color="#2b3036"/>
+      <stop offset="100%" stop-color="#07090b"/>
+    </linearGradient>
+
+    <linearGradient id="wave-highlight" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.08"/>
+      <stop offset="20%" stop-color="#ffffff" stop-opacity="0.78"/>
+      <stop offset="46%" stop-color="#6e767e" stop-opacity="0.26"/>
+      <stop offset="72%" stop-color="#ffffff" stop-opacity="0.62"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.06"/>
+    </linearGradient>
+
+    <radialGradient id="ring-pearl" cx="35%" cy="26%" r="75%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="28%" stop-color="#f5f6f7"/>
+      <stop offset="46%" stop-color="#aeb5bb"/>
+      <stop offset="58%" stop-color="#ffffff"/>
+      <stop offset="78%" stop-color="#7c848c"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </radialGradient>
+
+    <radialGradient id="ring-shadow" cx="50%" cy="50%" r="58%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="68%" stop-color="#000000" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.78"/>
+    </radialGradient>
+
+    <radialGradient id="intake-depth" cx="50%" cy="50%" r="58%">
+      <stop offset="0%" stop-color="#000000"/>
+      <stop offset="42%" stop-color="#030405"/>
+      <stop offset="68%" stop-color="#101419"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </radialGradient>
+
+    <linearGradient id="blade-body" x1="996" y1="176" x2="1045" y2="280" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#d8dde1" stop-opacity="0.86"/>
+      <stop offset="16%" stop-color="#6d767f" stop-opacity="0.82"/>
+      <stop offset="38%" stop-color="#15191e" stop-opacity="0.98"/>
+      <stop offset="68%" stop-color="#050607"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </linearGradient>
+
+    <linearGradient id="blade-edge" x1="1011" y1="176" x2="1036" y2="268" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.72"/>
+      <stop offset="28%" stop-color="#b7bec5" stop-opacity="0.42"/>
+      <stop offset="72%" stop-color="#171b1f" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+
+    <clipPath id="intake-clip">
+      <circle cx="1024" cy="280" r="103"/>
+    </clipPath>
+
+    <filter id="soft-shadow" x="-20%" y="-45%" width="140%" height="190%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="9" result="blur"/>
+      <feOffset dx="0" dy="18" result="offset"/>
+      <feColorMatrix in="offset" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .72 0" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="ring-glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="9" result="glow"/>
+      <feColorMatrix in="glow" type="matrix" values="1 0 0 0 1  0 1 0 0 1  0 0 1 0 1  0 0 0 .38 0"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <path id="fan-blade" d="M1016 176 C1027 175 1038 179 1048 187 C1037 212 1028 238 1020 268 C1015 269 1010 267 1005 264 C1009 235 1015 206 1016 176 Z"/>
+    <path id="fan-blade-highlight" d="M1022 179 C1032 181 1040 185 1046 191 C1036 213 1028 238 1021 262"/>
+  </defs>
+
+  <g id="transparent-background">
+    <rect width="2048" height="560" fill="transparent"/>
+    <ellipse cx="1024" cy="284" rx="640" ry="310" fill="url(#ambient-glow)"/>
+  </g>
+
+  <g id="metallic-wave" filter="url(#soft-shadow)">
+    <g id="wave-left">
+      <path fill="url(#chrome-dark)" d="M-96 210 C96 96 265 82 445 132 C615 179 734 210 884 164 C928 151 957 170 978 204 C810 258 685 252 520 217 C327 176 158 176 -96 345 Z"/>
+      <path fill="url(#chrome-soft)" opacity="0.92" d="M-110 260 C98 151 284 140 480 190 C636 230 748 230 902 184 C937 174 958 190 970 217 C807 282 677 288 506 252 C315 212 148 226 -110 405 Z"/>
+      <path fill="url(#chrome-dark)" opacity="0.76" d="M-112 320 C124 230 318 232 532 264 C695 288 803 264 948 216 C902 273 791 325 615 326 C410 328 228 292 -112 485 Z"/>
+      <path fill="none" stroke="url(#wave-highlight)" stroke-width="7" stroke-linecap="round" d="M-62 210 C112 104 282 86 446 133 C614 180 735 203 879 163"/>
+      <path fill="none" stroke="url(#wave-highlight)" stroke-width="4" stroke-linecap="round" opacity="0.62" d="M-68 260 C112 154 292 143 479 189 C638 227 748 226 898 183"/>
+      <path fill="none" stroke="url(#wave-highlight)" stroke-width="3" stroke-linecap="round" opacity="0.44" d="M-65 316 C130 238 322 235 530 263 C692 285 802 264 945 216"/>
+    </g>
+
+    <g id="wave-right">
+      <path fill="url(#chrome-soft)" d="M1070 204 C1214 138 1328 154 1464 228 C1610 308 1782 260 2144 96 L2144 234 C1840 405 1620 400 1436 304 C1318 242 1210 210 1092 262 C1046 282 1035 221 1070 204 Z"/>
+      <path fill="url(#chrome-dark)" opacity="0.78" d="M1078 270 C1238 218 1374 245 1524 304 C1690 370 1836 326 2144 214 L2144 350 C1860 460 1656 452 1458 368 C1332 315 1217 298 1092 324 C1048 333 1038 282 1078 270 Z"/>
+      <path fill="none" stroke="url(#wave-highlight)" stroke-width="8" stroke-linecap="round" d="M1080 204 C1216 140 1328 155 1460 226 C1608 304 1778 262 2110 110"/>
+      <path fill="none" stroke="url(#wave-highlight)" stroke-width="4" stroke-linecap="round" opacity="0.52" d="M1080 269 C1236 219 1370 245 1520 302 C1688 366 1832 326 2112 224"/>
+    </g>
+
+    <g id="wave-center">
+      <path fill="#000000" opacity="0.74" d="M846 224 C920 194 976 204 1024 238 C1072 204 1129 194 1204 224 C1146 260 1082 278 1024 276 C966 278 902 260 846 224 Z"/>
+    </g>
+  </g>
+
+  <g id="book-now-control" filter="url(#ring-glow)">
+    <circle cx="1024" cy="280" r="146" fill="#000000" opacity="0.66"/>
+    <circle id="outer-ring" cx="1024" cy="280" r="126" fill="none" stroke="url(#ring-pearl)" stroke-width="34"/>
+    <circle cx="1024" cy="280" r="126" fill="none" stroke="url(#ring-shadow)" stroke-width="34"/>
+    <circle cx="1024" cy="280" r="106" fill="url(#intake-depth)" stroke="#11161a" stroke-width="5"/>
+
+    <g clip-path="url(#intake-clip)">
+      <circle cx="1024" cy="280" r="104" fill="#020303"/>
+      <g id="turbine-blades">
+        <use href="#fan-blade" fill="url(#blade-body)" transform="rotate(0 1024 280)"/>
+        <use href="#fan-blade" fill="url(#blade-body)" transform="rotate(16.3636 1024 280)"/>
+        <use href="#fan-blade" fill="url(#blade-body)" transform="rotate(32.7272 1024 280)"/>
+        <use href="#fan-blade" fill="url(#blade-body)" transform="rotate(49.0908 1024 280)"/>
+        <use href="#fan-blade" fill="url(#blade-body)" transform="rotate(65.4544 1024 280)"/>
+        <use href="#fan-blade" fill="url(#blade-body)" transform="rotate(81.818 1024 280)"/>
+        <use href="#fan-blade" fill="url(#blade-body)" transform="rotate(98.1816 1024 280)"/>
+        <use href="#fan-blade" fill="url(#blade-body)" transform="rotate(114.5452 1024 280)"/>
+        <use href="#fan-blade" fill="url(#blade-body)" transform="rotate(130.9088 1024 280)"/>
+        <use href="#fan-blade" fill="url(#blade-body)" transform="rotate(147.2724 1024 280)"/>
+        <use href="#fan-blade" fill="url(#blade-body)" transform="rotate(163.636 1024 280)"/>
+        <use href="#fan-blade" fill="url(#blade-body)" transform="rotate(180 1024 280)"/>
+        <use href="#fan-blade" fill="url(#blade-body)" transform="rotate(196.3636 1024 280)"/>
+        <use href="#fan-blade" fill="url(#blade-body)" transform="rotate(212.7272 1024 280)"/>
+        <use href="#fan-blade" fill="url(#blade-body)" transform="rotate(229.0908 1024 280)"/>
+        <use href="#fan-blade" fill="url(#blade-body)" transform="rotate(245.4544 1024 280)"/>
+        <use href="#fan-blade" fill="url(#blade-body)" transform="rotate(261.818 1024 280)"/>
+        <use href="#fan-blade" fill="url(#blade-body)" transform="rotate(278.1816 1024 280)"/>
+        <use href="#fan-blade" fill="url(#blade-body)" transform="rotate(294.5452 1024 280)"/>
+        <use href="#fan-blade" fill="url(#blade-body)" transform="rotate(310.9088 1024 280)"/>
+        <use href="#fan-blade" fill="url(#blade-body)" transform="rotate(327.2724 1024 280)"/>
+        <use href="#fan-blade" fill="url(#blade-body)" transform="rotate(343.636 1024 280)"/>
+
+        <use href="#fan-blade-highlight" fill="none" stroke="url(#blade-edge)" stroke-width="3" stroke-linecap="round" transform="rotate(0 1024 280)"/>
+        <use href="#fan-blade-highlight" fill="none" stroke="url(#blade-edge)" stroke-width="3" stroke-linecap="round" transform="rotate(32.7272 1024 280)"/>
+        <use href="#fan-blade-highlight" fill="none" stroke="url(#blade-edge)" stroke-width="3" stroke-linecap="round" transform="rotate(65.4544 1024 280)"/>
+        <use href="#fan-blade-highlight" fill="none" stroke="url(#blade-edge)" stroke-width="3" stroke-linecap="round" transform="rotate(98.1816 1024 280)"/>
+        <use href="#fan-blade-highlight" fill="none" stroke="url(#blade-edge)" stroke-width="3" stroke-linecap="round" transform="rotate(130.9088 1024 280)"/>
+        <use href="#fan-blade-highlight" fill="none" stroke="url(#blade-edge)" stroke-width="3" stroke-linecap="round" transform="rotate(163.636 1024 280)"/>
+        <use href="#fan-blade-highlight" fill="none" stroke="url(#blade-edge)" stroke-width="3" stroke-linecap="round" transform="rotate(196.3636 1024 280)"/>
+        <use href="#fan-blade-highlight" fill="none" stroke="url(#blade-edge)" stroke-width="3" stroke-linecap="round" transform="rotate(229.0908 1024 280)"/>
+        <use href="#fan-blade-highlight" fill="none" stroke="url(#blade-edge)" stroke-width="3" stroke-linecap="round" transform="rotate(261.818 1024 280)"/>
+        <use href="#fan-blade-highlight" fill="none" stroke="url(#blade-edge)" stroke-width="3" stroke-linecap="round" transform="rotate(294.5452 1024 280)"/>
+        <use href="#fan-blade-highlight" fill="none" stroke="url(#blade-edge)" stroke-width="3" stroke-linecap="round" transform="rotate(327.2724 1024 280)"/>
+      </g>
+    </g>
+
+    <circle id="center-core" cx="1024" cy="280" r="61" fill="#000000" opacity="0.98"/>
+    <circle cx="1024" cy="280" r="104" fill="none" stroke="#000000" stroke-opacity="0.82" stroke-width="8"/>
+    <circle cx="1024" cy="280" r="90" fill="none" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1"/>
+
+    <g id="center-text">
+      <text x="1024" y="270" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="44" font-weight="500" fill="#ffffff" letter-spacing="-0.8">Book</text>
+      <text x="1024" y="315" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="44" font-weight="500" fill="#ffffff" letter-spacing="-0.8">Now</text>
+    </g>
+  </g>
+</svg>
